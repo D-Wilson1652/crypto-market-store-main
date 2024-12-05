@@ -1,7 +1,8 @@
 
 // Config Import
-import {Honeycomb} from "react-honeycomb-v2";
+import {Honeycomb, ResponsiveHoneycomb} from "react-honeycomb-v2";
 import CategoryCard from "@/components/sell-with-us/category-card.tsx";
+import {categoryCardsData} from "@/components/sell-with-us/data.ts";
 
 // ! Dummy Data
 const buySellData = [
@@ -22,11 +23,11 @@ const buySellData = [
     },
 ]
 const HomeFeaturedProductsCarousel = () => {
-    const items = buySellData;
-    const size = 250;
+    const items = categoryCardsData;
+    const size = 150;
 
     return(<div className="App">
-        <Honeycomb
+        <ResponsiveHoneycomb
             columns={1}
             size={size}
             items={items}
@@ -39,7 +40,7 @@ const HomeFeaturedProductsCarousel = () => {
                     link={category.link}
                 />
             )}>
-        </Honeycomb>
+        </ResponsiveHoneycomb>
 
     </div>
     )
