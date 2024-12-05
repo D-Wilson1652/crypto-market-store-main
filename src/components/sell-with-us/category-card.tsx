@@ -17,7 +17,7 @@ const CategoryCard = ({ image, name, link }: CategoryCardProps) => {
     };
 
     return (
-        <Hexagon>
+        <Hexagon className={"hexagon"}>
             <div className="w-full h-full object-cover rounded-2xl cursor-pointer  "
                  onClick={handleClick}
 
@@ -34,7 +34,7 @@ const CategoryCard = ({ image, name, link }: CategoryCardProps) => {
                             "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%)",
                     }}
                 />
-                <p className="absolute top-80 left-4 text-white text-2xl 2xl:text-3xl 4xl:text-4xl font-light">
+                <p className="absolute top-48 left-2 text-white text-2xl 2xl:text-3xl 4xl:text-4xl font-light">
                     {name}
                 </p>
             </div>

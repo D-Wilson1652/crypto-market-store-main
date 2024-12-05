@@ -1,5 +1,5 @@
-import HomeFeaturedProductsCarousel from "./home-featured-products-carousel";
 import HomeFeaturedProductsTwoCarousel from "./home-featured-products-two-carousel";
+import HomeFeaturedProductsCarousel from "@/components/home/featured-products/home-featured-products-carousel.tsx";
 
 const FeaturedProducts = () => {
     return (

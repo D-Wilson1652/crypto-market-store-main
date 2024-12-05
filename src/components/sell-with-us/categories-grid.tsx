@@ -1,6 +1,6 @@
 import CategoryCard from "./category-card";
 import {categoryCardsData } from "./data";
-import {ResponsiveHoneycomb,Honeycomb} from "react-honeycomb-v2";
+import {ResponsiveHoneycomb} from "react-honeycomb-v2";
 
 const CategoriesGrid = () => {
 

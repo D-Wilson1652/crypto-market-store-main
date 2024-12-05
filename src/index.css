@@ -530,9 +530,7 @@ th.rc-table-cell {
         rgba(174, 174, 174, 0.22) 72.4%
     );
 }
-.top-85{
-    top: 21.5rem;
-}
 .hexagon:hover {
-    transform: scale(1.5);
+    transform: scale(1.05);
+    transition-duration: 0.5s;
 }
