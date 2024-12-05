@@ -7,7 +7,7 @@ import CategoryCard from "@/components/sell-with-us/category-card.tsx";
 const buySellData = [
     {
         image: "/images/sell-with-us/category-1.png",
-        name: "test",
+        name: "buyer",
         link: null,
     },
     {
