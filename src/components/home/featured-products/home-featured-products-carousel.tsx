@@ -4,13 +4,7 @@
 import Text from "@/components/ui/typography/text.tsx";
 
 // ! Dummy Data
-const CoinFlipAnimation = () => {
-    return (
-        <div className="coin-flip">
-            <div className="coin flipping" />
-        </div>
-    );
-};
+
 const HomeFeaturedProductsCarousel = () => {
     return (<div className="mt-8 text-center lg:mt-20 2xl:mt-24">
         <div className="mx-auto max-w-4xl">
@@ -21,7 +15,9 @@ const HomeFeaturedProductsCarousel = () => {
                 This Item Is currently Under Construction. Please Try again later
             </Text>
         </div>
-        <CoinFlipAnimation />
+        <div className="coin-flip">
+            <div className="coin flipping"/>
+        </div>
     </div>)
 };
 
