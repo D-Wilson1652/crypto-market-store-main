@@ -1,33 +1,28 @@
 
 // Config Import
-import {ResponsiveHoneycomb} from "react-honeycomb-v2";
-import CategoryCard from "@/components/sell-with-us/category-card.tsx";
-import {categoryCardsData} from "@/components/sell-with-us/data.ts";
+
+import Text from "@/components/ui/typography/text.tsx";
 
 // ! Dummy Data
-
+const CoinFlipAnimation = () => {
+    return (
+        <div className="coin-flip">
+            <div className="coin flipping" />
+        </div>
+    );
+};
 const HomeFeaturedProductsCarousel = () => {
-    const items = categoryCardsData;
-    const size = 150;
-
-    return(<div className="App">
-        <ResponsiveHoneycomb
-            defaultWidth={1}
-            size={size}
-            items={items}
-            className={"gap-4"}
-            renderItem={(category, index) => (
-                <CategoryCard
-                    key={index}
-                    image={category.image}
-                    name={category.name}
-                    link={category.link}
-                />
-            )}>
-        </ResponsiveHoneycomb>
-
-    </div>
-    )
+    return (<div className="mt-8 text-center lg:mt-20 2xl:mt-24">
+        <div className="mx-auto max-w-4xl">
+            <Text tag="h1" className="text-[28px] font-bold leading-10">
+                Under Construction
+            </Text>
+            <Text className="mt-2 !text-sm 2xl:mt-4">
+                This Item Is currently Under Construction. Please Try again later
+            </Text>
+        </div>
+        <CoinFlipAnimation />
+    </div>)
 };
 
 export default HomeFeaturedProductsCarousel;
