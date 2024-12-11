@@ -534,3 +534,28 @@ th.rc-table-cell {
     transform: scale(1.05);
     transition-duration: 0.5s;
 }
+.coin-flip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.coin {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: radial-gradient(circle, gold 60%, #d4af37 100%);
+    position: relative;
+    animation: flip 2s infinite ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes flip {
+    0%, 100% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    50% {
+        transform: perspective(1000px) rotateY(180deg);
+    }
+}
