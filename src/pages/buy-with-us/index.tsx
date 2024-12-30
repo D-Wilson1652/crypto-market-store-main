@@ -12,7 +12,7 @@ const SellWithUs = () => {
                         className="text-xl md:!text-2xl lg:!text-4xl 2xl:!text-5xl 4xl:text-7xl font-bold text-[#19213D] mb-6 mt-10"
                         tag="h1"
                     >
-                        Sell with us
+                        Buy with us
                     </Text>
                     <Text
                         className="text-xl md:!text-2xl lg:!text-4xl 2xl:!text-5xl 4xl:text-7xl font-bold text-[#19213D] mb-6 mt-10"

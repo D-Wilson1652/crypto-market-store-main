@@ -14,36 +14,36 @@ export const categoryCardsData = [
     {
         image: "/images/sell-with-us/category-3.png",
         name: "Watches",
-        link: Routes.public.pricing,
+        link: Routes.public.comingSoon,
     },
     {
         image: "/images/sell-with-us/category-4.png",
         name: "Yachts",
-        link: Routes.public.pricing,
+        link: Routes.public.comingSoon,
     },
     {
         image: "/images/sell-with-us/category-5.png",
         name: "Jets",
-        link: Routes.public.pricing,
+        link: Routes.public.comingSoon,
     },
     {
         image: "/images/sell-with-us/category-6.png",
         name: "Motorcycles",
-        link: Routes.public.pricing,
+        link: Routes.public.comingSoon,
     },
     {
         image: "/images/sell-with-us/category-7.png",
         name: "Helicopters",
-        link: Routes.public.pricing,
+        link: Routes.public.comingSoon,
     },
     {
         image: "/images/sell-with-us/category-8.png",
         name: "Jewelry",
-        link: Routes.public.pricing,
+        link: Routes.public.comingSoon,
     },
     {
         image: "/images/sell-with-us/category-9.png",
         name: "Collectibles",
-        link: Routes.public.pricing,
+        link: Routes.public.comingSoon,
     },
 ];

@@ -12,6 +12,7 @@ export const Routes = {
         watch: "/watch",
         car: "/car",
         sellWithUs: "/sell-with-us",
+        buyWithUs: "/buy-with-us",
         termsAndConditions: "/terms-and-conditions",
         comingSoon: "/coming-soon",
         pricing: "/pricing",

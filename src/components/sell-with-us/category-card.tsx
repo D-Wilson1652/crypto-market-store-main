@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import {Hexagon} from "react-honeycomb-v2";
+import {Hexagon, Honeycomb} from "react-honeycomb-v2";
+import {categoryCardsData} from "@/components/sell-with-us/data.ts";
 
 type CategoryCardProps = {
     image: string;
@@ -7,13 +8,40 @@ type CategoryCardProps = {
     link: string;
 };
 
-const CategoryCard = ({ image, name, link }: CategoryCardProps) => {
+const CategoryCard = ({ image, name, link, }: CategoryCardProps) => {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate(link);
+        if(link!=null|| link!=undefined){
+            navigate(link);
+            window.scrollTo(0, 0);
+        }
+        else{
+            console.log("here")
+            if (name=="Sell"){
+                console.log("pass")
+                return (
+                    <div className="App test">
+                        <Honeycomb
+                            columns={1}
+                            size={150}
+                            items={categoryCardsData}
+                            className={"gap-2"}
+                            renderItem={(category, index) => (
+                                <CategoryCard
+                                    key={index}
+                                    image={category.image}
+                                    name={category.name}
+                                    link={category.link}
+                                />
+                            )}>
+                        </Honeycomb>
+                    </div>
+                )
+            }
+        }
 
-        window.scrollTo(0, 0);
+
     };
 
     return (

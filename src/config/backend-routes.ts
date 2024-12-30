@@ -1,4 +1,4 @@
-export const SERVER_BASE_URL = "https://backend.cryptomarketstore.com";
+export const SERVER_BASE_URL = "http://localhost:8080";
 
 export const BackendRoutes = {
     auth: {

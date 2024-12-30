@@ -15,6 +15,7 @@ import SideNavButton from "@/components/ui/side-nav-button";
 export default memo(function DashboardHeader() {
     const headerRef = useRef(null);
     addScrollingClass(headerRef);
+
     return (
         <header
             ref={headerRef}

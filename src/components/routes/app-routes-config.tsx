@@ -9,6 +9,7 @@ import ProtectedRoute from "@/components/routes/protected-route";
 // Redux Import
 import { useSelector } from "react-redux";
 import { RootState } from "@/redux/store";
+import BuyWithUs from "@/pages/buy-with-us";
 
 // Pages Import
 const Home = lazy(() => import("@/pages/home"));
@@ -70,6 +71,10 @@ function AppRoutesConfig() {
                 <Route
                     path={AppRoutes.public.sellWithUs}
                     element={<SellWithUs />}
+                />
+                <Route
+                    path={AppRoutes.public.buyWithUs}
+                    element={<BuyWithUs />}
                 />
                 <Route
                     path={AppRoutes.public.termsAndConditions}

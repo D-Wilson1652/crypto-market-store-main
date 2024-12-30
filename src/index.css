@@ -559,3 +559,8 @@ th.rc-table-cell {
         transform: perspective(1000px) rotateY(180deg);
     }
 }
+.test{
+    padding: 2em;
+    border-radius: 10px;
+    background-image: url("/public/images/home/hive-design/background-hive.webp");
+}

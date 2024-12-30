@@ -71,6 +71,9 @@ export default function PricingBlock() {
                     This Item Is currently Under Construction. Please Try again later
                 </Text>
             </div>
+            <div className="coin-flip">
+                <div className="coin flipping"/>
+            </div>
         </div>
 
     );
